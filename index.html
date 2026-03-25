@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Моє Резюме</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!DOCTYPE html>
@@ -14,9 +15,11 @@
     <title>Моє Резюме</title>
 </head>
 <body>
+    <button id="theme-toggle" class="theme-btn">Перемкнути тему</button>
 
     <header>
-        <h1>Студентка Кібербезпеки</h1>
+    ...
+        <h1>Студентка Кібербезпеки Паздерська Марія</h1>
         <p><strong>Контакти:</strong> mariia.pazderska.kb.2024@lpnu.ua | +380 99 123 45 67</p>
         <hr>
     </header>
@@ -48,6 +51,11 @@
                     Створення невеликих утиліт для автоматизації процесів.
                 </li>
             </ol>
+        <section>
+            <h2>Відгуки роботодавців</h2>
+            <div id="comments-container">
+                <p>Завантаження відгуків...</p>
+            </div>
         </section>
     </main>
 
@@ -57,6 +65,28 @@
     </footer>
 
 </body>
-</html>
+<div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Зв'язатися зі мною</h2>
+            
+            <form action="https://formspree.io/f/mwvwealq" method="POST">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Номер телефону:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+</html><script src="script.js"></script>
 </body>
 </html>
